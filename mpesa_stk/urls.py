@@ -19,7 +19,7 @@ from mpesa_app import views
 
 
 urlpatterns = [
-    path('daraja/stk-push', views.index, name='mpesa_stk_push_callback'),
+    # path('daraja/stk-push', views.stk_push_callback, name='mpesa_stk_push_callback'),
     path('', views.index, name='index'),
     path('admin/', admin.site.urls),
 ]
