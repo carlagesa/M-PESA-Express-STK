@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from mpesa_app import views
+
 
 urlpatterns = [
+    path('daraja/stk-push', views.index, name='mpesa_stk_push_callback'),
+    path('', views.index, name='index'),
     path('admin/', admin.site.urls),
 ]
